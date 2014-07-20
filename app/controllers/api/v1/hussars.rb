@@ -1,8 +1,7 @@
 module API
   module V1
     class Hussars < Grape::API
-      version 'v1'
-      format :json
+      include API::V1::Defaults
 
       resource :hussars do
         desc "Return list of hussars"
