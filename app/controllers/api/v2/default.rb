@@ -5,7 +5,7 @@ module API
 
       included do
         version 'v2'
-        fomrat :json
+        format :json
 
         rescue_from ActiveRecord::RecordNotFound do |e|
           error_response(message: e.message, status: 404)
