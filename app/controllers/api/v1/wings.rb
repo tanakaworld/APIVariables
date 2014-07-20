@@ -1,8 +1,8 @@
 module API
   module V1
     class Wings < Grape::API
-      include API::V1::Defaults
-      
+      include API::V1::Default
+
       resource :wings do
         desc "Return list of wings"
         get do

@@ -1,6 +1,6 @@
 module API
   module V1
-    module Defaults
+    module Default
       extend ActiveSupport::Concern
 
       included do
